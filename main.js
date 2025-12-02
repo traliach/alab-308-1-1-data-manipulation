@@ -46,3 +46,8 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
   // Check five: all numbers are divisible by 5
 const alldivby5 =n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+
+// Check: is the first number larger than the last?
+const firstGreaterThanLast = n1 > n4;
+
+console.log(`First number greater than last: ${firstGreaterThanLast}`);
