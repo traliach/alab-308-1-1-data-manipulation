@@ -51,3 +51,17 @@ const alldivby5 =n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
 const firstGreaterThanLast = n1 > n4;
 
 console.log(`First number greater than last: ${firstGreaterThanLast}`);
+
+// Arithmetic operations using the four numbers:
+// 1) Subtract n1 from n2
+const secondMinusFirst = n2 - n1;
+
+// 2) Multiply the result by n3
+const multipliedByThird = secondMinusFirst * n3;
+
+// 3) Remainder of the result divided by n4
+const remainderByFourth = multipliedByThird % n4;
+
+console.log(`n2 - n1: ${secondMinusFirst}`);
+console.log(`(n2 - n1) * n3: ${multipliedByThird}`);
+console.log(`Remainder of the result divided by n4: ${remainderByFourth}`);
