@@ -44,24 +44,31 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
-  // Check five: all numbers are divisible by 5
-const alldivby5 =n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+// New variable: true only when all numbers are 25 or under.
+const allUnderOrEqual25 = !isOver25;
+console.log(`Are all numbers 25 or under? ${allUnderOrEqual25}.`);
+
+// Check five: all numbers are divisible by 5
+const alldivby5 =
+  n1 % 5 === 0 &&
+  n2 % 5 === 0 &&
+  n3 % 5 === 0 &&
+  n4 % 5 === 0;
+console.log(`Are all the numbers divisible by 5? ${alldivby5}.`);
 
 // Check: is the first number larger than the last?
 const firstGreaterThanLast = n1 > n4;
-
-console.log(`First number greater than last: ${firstGreaterThanLast}`);
+console.log(`Is the first number larger than the last? ${firstGreaterThanLast}.`);
 
 // Arithmetic operations using the four numbers:
 // 1) Subtract n1 from n2
 const secondMinusFirst = n2 - n1;
+console.log(`n2 - n1: ${secondMinusFirst}.`);
 
 // 2) Multiply the result by n3
 const multipliedByThird = secondMinusFirst * n3;
+console.log(`(n2 - n1) * n3: ${multipliedByThird}.`);
 
 // 3) Remainder of the result divided by n4
 const remainderByFourth = multipliedByThird % n4;
-
-console.log(`n2 - n1: ${secondMinusFirst}`);
-console.log(`(n2 - n1) * n3: ${multipliedByThird}`);
-console.log(`Remainder of the result divided by n4: ${remainderByFourth}`);
+console.log(`Remainder of the result divided by n4: ${remainderByFourth}.`);
