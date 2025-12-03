@@ -72,3 +72,54 @@ console.log(`(n2 - n1) * n3: ${multipliedByThird}.`);
 // 3) Remainder of the result divided by n4
 const remainderByFourth = multipliedByThird % n4;
 console.log(`Remainder of the result divided by n4: ${remainderByFourth}.`);
+
+// Part 2:
+//Part 2: Practical Math
+// Let’s look at a more practical scenario.
+// You are planning a cross-country road trip!
+// The distance of the trip, in total, is 1,500 miles.
+// Your car’s fuel efficiency is as follows:
+// At 55 miles per hour, you get 30 miles per gallon.
+// At 60 miles per hour, you get 28 miles per gallon.
+// At 75 miles per hour, you get 23 miles per gallon.
+// You have a fuel budget of $175.
+// The average cost of fuel is $3 per gallon.
+// Set up a program to answer the following questions:
+// How many gallons of fuel will you need for the entire trip?
+// Will your budget be enough to cover the fuel expense?
+// How long will the trip take, in hours?
+// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+// Log the results of your calculations using string concatenation or template literals.//
+
+// inputs
+const distance = 1500;
+const fuelEfficiency55 = 30;
+const fuelEfficiency60 = 28;
+const fuelEfficiency75 = 23;
+const fuelBudget = 175;
+const fuelCost = 3;
+
+// calculations
+const gallonsNeeded55 = distance / fuelEfficiency55;
+const gallonsNeeded60 = distance / fuelEfficiency60;
+const gallonsNeeded75 = distance / fuelEfficiency75;
+const fuelExpense55 = gallonsNeeded55 * fuelCost;
+const fuelExpense60 = gallonsNeeded60 * fuelCost;
+const fuelExpense75 = gallonsNeeded75 * fuelCost;
+const tripTime55 = distance / 55;
+const tripTime60 = distance / 60;
+const tripTime75 = distance / 75;
+
+// outputs
+console.log(`You will need ${gallonsNeeded55} gallons of fuel for the trip at 55 mph.`);
+console.log(`You will need ${gallonsNeeded60} gallons of fuel for the trip at 60 mph.`);
+console.log(`You will need ${gallonsNeeded75} gallons of fuel for the trip at 75 mph.`);
+console.log(`The fuel expense for the trip at 55 mph is ${fuelExpense55} dollars.`);
+console.log(`The fuel expense for the trip at 60 mph is ${fuelExpense60} dollars.`);
+console.log(`The fuel expense for the trip at 75 mph is ${fuelExpense75} dollars.`);
+console.log(`The trip time for the trip at 55 mph is ${tripTime55} hours.`);
+console.log(`The trip time for the trip at 60 mph is ${tripTime60} hours.`);
+console.log(`The trip time for the trip at 75 mph is ${tripTime75} hours.`);
+
+
+
